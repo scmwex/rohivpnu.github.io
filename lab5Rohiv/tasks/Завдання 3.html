@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .container {
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+
+  .box {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #000;
+  }
+
+  .box1 {
+    background-color: #ff6666;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+
+  .box2 {
+    background-color: #66ff66;
+    float: left;
+  }
+
+  .box3 {
+    background-color: #6666ff;
+    float: left;
+  }
+
+  .clear-box {
+    clear: both;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="box box1">Box 1 (position: absolute, z-index: 2)</div>
+  <div class="box box2">Box 2 (float: left)</div>
+  <div class="box box3">Box 3 (float: left)</div>
+  <div class="clear-box"></div>
+</div>
+</body>
+</html>
