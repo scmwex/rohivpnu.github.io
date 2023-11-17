@@ -1,0 +1,76 @@
+/* Стилізуємо заголовок з контуром */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    outline: 2px solid #fff;
+    resize: both;
+    overflow: auto;
+}
+
+/* Стилізуємо навігацію з контуром */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    outline: 1px dashed #333; /* Додали контур */
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Стилізуємо розділи і статті з контуром */
+section {
+    padding: 20px;
+    outline: 1px solid #333; /* Додали контур */
+    resize: both;
+    overflow: auto;
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+article {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+    outline: 2px dotted #ddd; /* Додали контур */
+    resize: both;
+    overflow: auto;
+}
+
+article h3 {
+    font-size: 1.2em;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+    outline: 1px solid #333; /* Додали контур */
+}
+
+/* Стилізуємо підвал з контуром */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8em;
+    outline: 1px solid #fff; /* Додали контур */
+    resize: both;
+    overflow: auto;
+}
+

@@ -1,0 +1,186 @@
+/* Стилізуємо загальні елементи сторінки */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Стилізуємо заголовок */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    transition: background-color 0.5s ease;
+}
+header:hover {
+    background-color: #555;
+}
+header h1 {
+    font-size: 2em;
+    text-decoration: underline;
+}
+
+/* Стилізуємо навігацію */
+nav {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+nav:hover {
+    background-color: #555;
+    color: #ffcc00;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Стилізуємо розділи і статті */
+section {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+/* Стилізуємо поле вводу для пошуку */
+.search-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.search-container input {
+    padding: 10px;
+    flex: 1;
+}
+
+.search-container button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+article {
+    background-color: #fff;
+    border: 1px solid transparent;  
+    padding: 10px;
+    margin: 10px 0;
+
+    /* Визначаємо зображення для рамки */
+    border-image-source: url('../lab7_Tymchuk/clothes/ramka.png');
+
+    /* Визначаємо ширину рамки-зображення */
+    border-image-width: 10px;
+
+    /* Визначаємо ресурси для розтину рамки */
+    border-image-slice: fill; 
+
+    /* Визначаємо повторення рамки-зображення */
+    border-image-repeat: round; 
+
+    /* Визначаємо зміщення рамки-зображення */
+    border-image-outset: 5px; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+}
+article:hover {
+    background-color: #f0f0f0;
+    border-color: #ccc;
+    transform: scale(1.05);
+}
+
+article h3 {
+    font-size: 1.2em;
+    text-decoration: line-through;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+}
+section article img {
+    transition: transform 0.3s ease; /* Додаємо анімацію трансформації */
+}
+
+/* Збільшуємо масштаб при наведенні курсору на зображення */
+section article:hover img {
+    transform: scale(1.1);
+    transform: matrix3d(1.1, 0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1);
+}
+
+/* Додаємо трансформацію для рамки при наведенні на статтю */
+section article:hover {
+    transform: scale(1.05);
+    transform: matrix3d(1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1);
+}
+
+/* Зменшуємо масштаб тексту при наведенні на статтю */
+section article:hover h3 {
+    transform: scale(0.9);
+    transform: matrix3d(0.9, 0, 0, 0, 0, 0.9, 0, 0, 0, 0, 0.9, 0, 0, 0, 0, 1);
+}
+/* Стилізуємо підвал */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8em;
+}
+
+/* Додамо форматування для лапок (якщо потрібно) */
+q::before {
+    content: open-quote;
+}
+
+q::after {
+    content: close-quote;
+}
+input {
+    caret-color: rgb(209, 154, 1); /* Замініть "red" на вибраний вами колір */
+}
+/* Градієнтна рамка для елемента з класом gradient-box */
+.gradient-box {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    max-width: 22em;
+    position: relative;
+    padding: 30% 2em;
+    box-sizing: border-box;
+    border: 5px solid transparent;
+    color: #FFF;
+    background-clip: padding-box;
+    border-radius: 1em;
+}
+
+.gradient-box:before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -1;
+    margin: -5px;
+    border-radius: inherit;
+    background: linear-gradient(to right, red, orange); /* Ваш градієнт тут */
+}
