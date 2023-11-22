@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #3498db;
+      color: #fff;
+      text-align: center;
+      line-height: 100%;
+      padding: 20px;
+      transform: rotate(5deg);
+      animation: fadeInDown 1s ease-out; /* додано анімацію з'явлення зверху вниз */
+    }
+
+    .container {
+      margin-top: 50px;
+      height: 80%;
+      display: flex;
+      animation: fadeIn 1s ease-out; /* додано анімацію з'явлення для контейнера */
+    }
+
+    .left-column,
+    .right-column {
+      background-color: #2ecc71;
+      flex: 1;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      animation: fadeInLeft 1s ease-out; /* додано анімацію з'явлення зліва */
+    }
+
+    .center-column {
+      background-color: #e74c3c;
+      flex: 2;
+      padding: 20px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      animation: fadeInUp 1s ease-out; /* додано анімацію з'явлення знизу вгору */
+    }
+
+    .footer {
+      background-color: #9b59b6;
+      color: #fff;
+      text-align: center;
+      line-height: 100%;
+      padding: 20px;
+      animation: fadeInUp 1s ease-out; /* додано анімацію з'явлення знизу вгору для підвалу */
+    }
+
+    .header a {
+      color: #fff;
+      text-decoration: none;
+      margin-right: 20px;
+      font-weight: bold;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  </style>
+  <title>Rohiv</title>
+</head>
+<body>
+  <div class="header">
+    <a href="https://scmwex.github.io/rohivpnu.github.io/">До лабораторних...</a>
+    <a href="../lab8Rohiv/task2.html">Завдання 2</a>
+
+    Блок 1  &#10004; &#10003; &#10060;
+    <h1>Що таке спортивні аксесуари?</h1>
+  </div>
+  <div class="container">
+    <div class="left-column">
+      Блок 5 &#9733; &#9734; &#10052;
+      <p>Категорію з назвою «Спортивні аксесуари» можна зустріти практично в кожному магазині спортивного харчування, але не всім зрозуміло, що ж туди входить і для чого такі предмети взагалі потрібні. У статті ми опишемо, що ж відноситься до аксесуарів для спорту та для чого вони потрібні.
+
+        Отже, спортивні аксесуари – це різні допоміжні предмети, які потрібні для полегшення тренувального процесу, кращої безпеки або зручності, профілактики травм.</p>
+    </div>
+    <div class="center-column">
+
+      <p> Блок 4 &#9829; &#9827; &#9830;
+
+        Мета спортивних аксесуарів як класу – забезпечити різнобічну підтримку спортсменові під час тренування. Наприклад, спеціальний атлетичний пояс потрібен, щоб стримувати величезний внутрішньом’язовий тиск, який виникає при присіданнях або становій тязі з великою вагою. Бинти використовуються, щоб уберегти суглоби і зв’язки (рук) від надмірних навантажень, оскільки часто зв’язкового-суглобовий апарат не встигає відновлюватися між регулярними тренуваннями, до того ж, саме на зв’язки і суглоби рук падає більше навантаження (навіть така дрібниця як повісити млинці на штангу – вже навантаження).
+
+        Мета покупки спортивних аксесуарів перш за все носить практичний характер. Більш того, в деяких випадках той же спортивний пояс може вберегти від отримання грижі і підвищити силові атлета в присіданні або становій тязі на 5-80 кг. Так, деякі атлети за допомогою спеціальної екіпіровки можуть піднімати набагато більше, ніж без неї: за рахунок стримування м’язового корсету.</p>
+
+    </div>
+    <div class="right-column">
+
+      <h1>Блок 2 &#9889; &#9731; &#9730;</h1>
+      <p>Блок 2 &#9889; &#9731; &#9730;</p>
+
+      <img src="../lab7Rohiv/sportphoto/boxx.jpg">
+    </div>
+  </div>
+  <div class="footer">
+    Блок 1 &#128512; &#128513; &#128514;
+    <p>Шейкери, таблетниці і спортивні пляшки можна віднести до окремої категорії, а саме, – це ємності для зберігання спортивного харчування. У шейкерах змішуються коктейлі: протеїн, гейнер, порошкові BCAA. Пляшки зі спеціального пластику або силікону призначені для багаторазового носіння води в зал. таблетниці зручні, щоб брати з собою капсули або таблетки вже в відміряній кількості.
+
+Багатьом спортсменам спортивні аксесуари допомагають домогтися кращих результатів або просто полегшують процес тренування. У будь-якому випадку, це досить корисний клас спортивних товарів, серед яких точно знайдеться предмет, який потрібен саме вам.</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    h1, h2, p {
+      margin: 0;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .header {
+      background-color: #3498db;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .main-content {
+      background-color: #ecf0f1;
+      padding: 20px;
+    }
+
+    .sidebar {
+      background-color: #2ecc71;
+      padding: 20px;
+    }
+
+    .footer {
+      background-color: #9b59b6;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (min-width: 768px) {
+      .grid-container {
+        grid-template-columns: 2fr 1fr;
+      }
+    }
+
+    @media print {
+      body {
+        background-color: #fff;
+        color: #000;
+      }
+
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+
+      .header, .sidebar, .footer {
+        display: none;
+      }
+    }
+  </style>
+  <title>Rohiv</title>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="header">
+      <h1>Спортивні аксесуари</h1>
+    </div>
+    <div class="main-content">
+      <h2>Спортивна сумка</h2>
+      <p>Ще один тренд, здатний вписатися в стилістику більш класичних образів – спортивна сумка. Так само, як і окуляри, цей елемент гардеробу знизить градус строгості і зробить зовнішній вигляд максимально чіпляє погляди оточуючих. Серед таких аксесуарів варто звертати особливу увагу на великі масивні сумки, які зараз в актуальних трендах сезону. При цьому необов’язково купувати таку сумку у брендових марках, можна знайти цікаві моделі та у звичайних спортивних магазинах.
+        Дизайн
+Зовнішній вигляд - важливий аспект, враховуючи, що спортивна сумка виконує не тільки пряму утилітарну функцію, але і роль модного аксесуара, що доповнює і завершує образ. Вона повинна підходити під спортивний одяг або повсякденний лук. Сьогодні виробники пропонують широкий асортимент моделей на будь-який смак: класичний спортивний дизайн, спорт-шик, моделі-унісекс, чоловічі та жіночі варіанти.
+
+Чоловічі моделі зазвичай мають лаконічний зовнішній вигляд і нейтральні стримані кольори. Жіночі моделі виділяються яскравими квітами, що гармонують з образом в цілому, незвичайними принтами або оригінальними деталями.
+      </p>
+    </div>
+    <div class="sidebar">
+    <p><img src="../lab8Rohiv/sportsbagnike.jpg" alt="спортивна сумка">
+    </p>
+    </div>
+    <div class="footer">
+        <img src="../lab8Rohiv/sportbag.jpg">
+    </div>
+  </div>
+</body>
+</html>
