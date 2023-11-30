@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    h1::before {
+      content: attr(data-prefix); /* Використання функції attr() для отримання значення атрибута data-prefix */
+      color: #3498db;
+      font-weight: bold;
+    }
+
+    .container {
+      width: calc(100% - 40px); /* Використання функції calc() для вирахування ширини контейнера */
+      margin: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+
+    .box {
+      width: calc(33.33% - 10px); /* Використання функції calc() для вирахування ширини блоку відсотковим способом */
+      margin: 5px;
+      float: left;
+      background-color: #2ecc71;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+  </style>
+  <title>attr() та calc() в CSS</title>
+</head>
+<body>
+  <h1 data-prefix="Привіт,">CSS attr() та calc()</h1>
+
+  <div class="container">
+    <div class="box">Блок 1</div>
+    <div class="box">Блок 2</div>
+    <div class="box">Блок 3</div>
+  </div>
+</body>
+</html>
