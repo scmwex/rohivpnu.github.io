@@ -1,0 +1,75 @@
+section {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-control-next-icon {
+    background-image: url(../img/images.png);
+}
+
+.carousel-control-prev-icon {
+    background-image: url(../img/left-arrow-28.png);
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: 20px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 20px;
+}
+
+.carousel-control-prev {
+    left: 0 px;
+}
+
+.carousel-control-next {
+    right: 110px;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #495057;
+}
+
+header {
+    background-color: #dc3545; /* Червоний колір */
+    padding: 10px 0;
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav.navbar {
+    background-color: #dc3545; /* Червоний колір */
+}
+
+section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2 {
+    color: #dc3545; /* Червоний колір */
+}
+
+.card {
+    border: 2px solid #dc3545; /* Червоний колір */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-outline-success {
+    color: #dc3545; /* Червоний колір */
+    border-color: #dc3545; /* Червоний колір */
+}
+
+.btn-outline-success:hover {
+    background-color: #c82333; /* Темніший червоний колір на hover */
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
