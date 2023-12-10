@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task4</title>
+    <style>
+        /* :checked - стилізація для вибраних (позначених) чекбоксів */
+        input[type="checkbox"]:checked {
+            background-color: lightgreen;
+        }
+
+        /* :not(селектор) - стилізація для елементів, які не відповідають вказаному селектору */
+        p:not(.special-paragraph) {
+            color: gray;
+        }
+
+        /* :read-write - стилізація для елементів, які можна читати та змінювати (такі як input, textarea) */
+        :read-write {
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+
+    <label for="checkbox">Check me:</label>
+    <input type="checkbox" id="checkbox">
+
+    <p class="regular-paragraph">Це звичайний абзац.</p>
+    <p class="special-paragraph">Це особливий абзац.</p>
+
+    <input type="text" placeholder="Read-Write Input">
+    <textarea placeholder="Read-Write Textarea"></textarea>
+
+    <a href="https://scmwex.github.io/rohivpnu.github.io/">На головну</a>
+
+</body>
+</html>
